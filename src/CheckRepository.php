@@ -37,9 +37,8 @@ class CheckRepository
     {
         $checks = config('server-monitor.checks');
 
-        return collect($checks)->map(function($check) {
+        return collect($checks)->map(function ($check) {
             return $check::NAME;
         })->toArray();
     }
-
 }

@@ -73,9 +73,9 @@ class Check extends Model
             ->isFuture();
     }
 
-    private function findCheckDefinition() : string {
-
-        return collect(config("server-monitor.checks"))->first(function($check) {
+    private function findCheckDefinition() : string
+    {
+        return collect(config("server-monitor.checks"))->first(function ($check) {
             return $this->type == $check::NAME;
         });
     }

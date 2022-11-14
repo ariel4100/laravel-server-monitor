@@ -68,5 +68,4 @@ class AddHost extends BaseCommand
 
         return array_diff($chosenChecks, [static::$allChecksLabel]);
     }
-
 }

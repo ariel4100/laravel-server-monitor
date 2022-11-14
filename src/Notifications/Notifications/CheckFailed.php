@@ -46,7 +46,7 @@ class CheckFailed extends BaseNotification
     {
         return [
             'subject' => $this->getSubject(),
-            'message' => $this->getMessageText()
+            'message' => $this->getMessageText(),
         ];
     }
 

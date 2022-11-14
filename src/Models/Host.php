@@ -9,7 +9,6 @@ use Spatie\ServerMonitor\Models\Concerns\HasCustomProperties;
 use Spatie\ServerMonitor\Models\Enums\CheckStatus;
 use Spatie\ServerMonitor\Models\Enums\HostHealth;
 use Spatie\ServerMonitor\Models\Presenters\HostPresenter;
-use Spatie\ServerMonitor\Models\Record;
 
 class Host extends Model
 {

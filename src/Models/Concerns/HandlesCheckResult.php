@@ -11,7 +11,8 @@ use Spatie\ServerMonitor\Models\Record;
 
 trait HandlesCheckResult
 {
-    private function saveRecord($value) {
+    private function saveRecord($value)
+    {
         $record = new Record;
         $record->host_id = $this->host->id;
         $record->value = $value;

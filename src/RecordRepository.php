@@ -33,7 +33,8 @@ class RecordRepository
         return $recordModel;
     }
 
-    public static function clean() {
+    public static function clean()
+    {
         Record::where('created_at', '<', now()->subDays(config('server-monitor.purge'))->format('Y-m-d H:i:s'))->delete();
     }
 }
